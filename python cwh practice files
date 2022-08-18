@@ -1,0 +1,85 @@
+if __name__== '__main__':
+    def logfile():
+        print("which file did you want to open\n press 1 for hemanth and 2 for harika and 3 for ananya")
+        b = int(input())
+        if b == 1:
+            c = int(input("which file did you want to log is it diet or exercise\n press 1 for diet and 2 for exercise\n"))
+            if c == 1:
+                f1 = open("hemanth diet", "a")
+                d = input("give the input for the file")
+                f1.write(d[0:])
+                print("thanks for using the services of hemanth's1 health management system")
+            else:
+                f2 = open("hemanth exercise", "a")
+                d = input("give the input for the file")
+                f2.write(d[0:])
+                print("thanks for using the services of hemanth's1 health management system")
+        elif b == 2:
+            c = int(input("which file did you want to log is it diet or exercise\n press 1 for diet and 2 for exercise\n"))
+            if c == 1:
+                f3 = open("harika diet ", "a")
+                d = input("give the input for the file")
+                f3.write(d[0:])
+                print("thanks for using the services of hemanth's1 health management system")
+            else:
+                f4 = open("harika exercise ", "a")
+                d = input("give the input for the file")
+                f4.write(d[0:])
+                print("thanks for using the services of hemanth's1 health management system")
+        elif b == 3:
+            c = int(input("which file did you want to log is it diet or exercise\n press 1 for diet and 2 for exercise\n"))
+            if c == 1:
+                f5 = open("ananya diet", "a")
+                d = input("give the input for the file")
+                f5.write(d[0:])
+                print("thanks for using the services of hemanth's1 health management system")
+            else:
+                f6 = open("ananya exercise", "a")
+                d = input("give the input for the file")
+                f6.write(d[0:])
+
+
+    def retrieve():
+        e = int(input("give the no.of file you want to retrieve\n press 1 for hemanth and 2 for harika and 3 for ananya\n"))
+        if e == 1:
+        f = int(input("which file you want to retrieve \n press 1 for diet and 2 for exercise"))
+        if f == 1:
+            f7 = open("hemanth diet")
+            print(f7.readlines())
+
+        if f == 2:
+            f8 = open("hemanth exercise")
+            print(f8.readlines())
+
+
+        elif e==2:
+            f = int(input("which file you want to retrieve \n press 1 for diet and 2 for exercise\n"))
+            if f == 1:
+                f9 = open("harika diet")
+                print(f9.readlines())
+
+            if f == 2:
+                f8 = open("harika exercise ")
+                print(f8.readlines())
+
+        elif e == 3:
+            f = int(input("which file you want to retrieve \n press 1 for diet and 2 for exercise\n"))
+            if f == 1:
+                f9 = open("ananya diet")
+                print(f9.readlines())
+
+
+            if f==2:
+                f10 = open("ananya exercise")
+                print(f10.readlines())
+
+
+    print("hello and welcome to health management system")
+    a = int(input(
+        "do you want to log an exercise or do you want to retrieve a"
+        " \n press 1 for the log function and 2 for the retrieve function\n"))
+    if a == 1:
+        logfile()
+
+    elif a == 2:
+        retrieve()
